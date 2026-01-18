@@ -1,1 +1,8 @@
 
+Criando um alias para o kubectl
+
+Crie o alias k para kubectl:
+
+alias k=kubectl
+
+complete -F __start_kubectl k
