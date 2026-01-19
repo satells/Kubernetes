@@ -6,3 +6,12 @@ Crie o alias k para kubectl:
 alias k=kubectl
 
 complete -F __start_kubectl k
+
+
+Criar um cluster com o K3d
+
+k3d cluster create lab-estudos \
+  --servers 1 \
+  --agents 2 \
+  --port "8080:80@loadbalancer" \
+  --wait
