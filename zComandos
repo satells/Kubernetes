@@ -15,3 +15,8 @@ k3d cluster create lab-estudos \
   --agents 2 \
   --port "8080:80@loadbalancer" \
   --wait
+
+Parar: k3d cluster stop lab-estudos
+Voltar: k3d cluster start lab-estudos
+Deletar: k3d cluster delete lab-estudos
+Listar: k3d cluster list
